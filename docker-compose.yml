@@ -1,0 +1,11 @@
+﻿version: '3'
+services:
+  db:
+    image: postgres:latest
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: "users"
+      POSTGRES_USER: "timofey"
+      POSTGRES_PASSWORD: "nbvfif132"
+    ports:
+      - "5432:5432"
